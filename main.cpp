@@ -15,16 +15,15 @@ int main()
     std::cout << "*Bella runs off home as her mother calls her, saying her goodbyes before she goes*" << std::endl;
     std::cout << "Dave: *picking up a stick and turns to you, the snail* “What am I going to do?? I didn’t make anything for the potluck tomorrow! Bella and all my other friends are going to be so disappointed in me..”" << std::endl;
     std::cout << "(Wait, what's the name of the snail?)" << std::endl;
-    std::string name = "";
+    std::string name;
     std::cin >> name;
-    std::cout << "what is ur age" << std::endl;
-    double age = 0;
+    std::cout << "(Your age?)" << std::endl;
+    double age;
     std::cin >> age;
-    std::cout << "what color is your shell" << std::endl;
-    std::string color = "";
+    std::cout << "(Shell Color?)" << std::endl;
+    std::string color;
     std::cin >> color;
-    Character player(name, color, age);
-    std::cout << "welcome to the world " << player.getName() << std::endl;
+    std::cout << "(Nice!)" << name << std::endl;
 
     bool failure = false;
     while (failure != true)
