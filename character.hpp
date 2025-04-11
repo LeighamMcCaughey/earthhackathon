@@ -4,7 +4,11 @@
 
 class Character {
     public:
-
+    Character(){
+        char_name_ = "";
+        color_ = "";
+        age_ = 0;
+    }
     Character(std::string name, std::string color, double age)
     {
         char_name_ = name;
@@ -30,8 +34,15 @@ class Character {
     std::string getColor()
     { return color_; }
 
+    void setItem(std::string item)
+    { item_ = item; }
+
+    std::string getItem()
+    { return item_; }
+
     private:
     std::string char_name_;
     std::string color_;
     double age_;
+    std::string item_;
 };
