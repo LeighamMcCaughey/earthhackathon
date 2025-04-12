@@ -4,7 +4,12 @@
 int main() 
 {
     bool failure = false;
-    Character player();
+    std::string name;
+    
+    double age;
+    
+    std::string color;
+
     std::cout << "*You are sitting on a log, watching a boy your curiosity get’s the better of you*" << std::endl;
     std::cout << "Little Boy: Sitting looking down playing with a stick" << std::endl;
     std::cout << "*Suddenly a little girl comes up to him*" << std::endl;
@@ -16,24 +21,20 @@ int main()
     std::cout << "*Bella runs off home as her mother calls her, saying her goodbyes before she goes*" << std::endl;
     std::cout << "Dave: *picking up a stick and turns to you, the snail* “What am I going to do?? I didn’t make anything for the potluck tomorrow! Bella and all my other friends are going to be so disappointed in me..”" << std::endl;
     std::cout << "(Wait, what's the name of the snail?)" << std::endl;
-    std::string name;
+
     std::cin >> name;
     std::cout << "(Your age?)" << std::endl;
-    double age;
     std::cin >> age;
     std::cout << "(Shell Color?)" << std::endl;
-    std::string color;
     std::cin >> color;
     std::cout << "(Nice! Back to the story!)" << std::endl;
 
-
     while (failure != true)
     {
-
         std::cout << "(Choose one of the given options! Just type in 1 or 2!)" << std::endl;
         std::cout << "Option 1: Respond" << std::endl;
-        std::cout << "==========================================" << std::endl;
         std::cout << "Option 2: Leave" << std::endl;
+        std::cout << "==========================================" << std::endl;
         int option_selection;
         std::cin >> option_selection;
         if (option_selection == 1)
@@ -71,22 +72,21 @@ int main()
         std::string item = "";
         
         
-        while  !(item == "a"|| item == 'A' || item == 'b' || item == 'B' || item == 'c' || item == 'C') {
+        while  !(item == "a"|| item == "A" || item == "b" || item == 'B' || item == "c" || item == "C") {
         std::cin << item;
         
-        if (item == a || item == A || item == b || item == B || item == c || item == C) {
-            std:: cout << “Dave: Wow! That’s exactly what I need for my potluck tomorrow!” << std::endl;
+        if (item == "a" || item == "A" || item == "b" || item == "B" || item == "c" || item == "C") {
+            std:: cout << "Dave: Wow! That’s exactly what I need for my potluck tomorrow!" << std::endl;
         
         else 
-            std::cout << Dave: “Uhm.. I don’t think this is exactly what I need. How about something else?” << std::endl;
+            std::cout << "Dave: Uhm.. I don’t think this is exactly what I need. How about something else?" << std::endl;
         }
         
-        std::cout << player name << “: Yes! Take as much as you want, but be careful.. There is a Toad near here, his name is Gavril the Toad. He likes to take all the food in the garden for himself.” << std::endl;
+        std::cout << player name << ": Yes! Take as much as you want, but be careful.. There is a Toad near here, his name is Gavril the Toad. 
+                                    He likes to take all the food in the garden for himself." << std::endl;
         
-        std::cout << player name << “: Gavril loves global warming and processed food, so he doesn’t want ANYONE taking any fresh food.” << std::endl;
+        std::cout << player name << ": Gavril loves global warming and processed food, so he doesn’t want ANYONE taking any fresh food." << std::endl;
         
-
-
     }
     if (failure == true)
     {
